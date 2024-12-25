@@ -135,7 +135,7 @@ footer p {
 
 /* Estilo para el botón de música */
 #stop-music {
-    position: fixed; /* Usar "fixed" para que esté fijo en la pantalla */
+    position: fixed; /* Fijo en la parte superior de la pantalla */
     top: 20px; /* Colocado 20px desde la parte superior */
     right: 20px; /* Colocado 20px desde la parte derecha */
     padding: 10px 20px;
@@ -161,6 +161,17 @@ footer p {
         right: 10px; /* Reducir el espacio derecho en pantallas pequeñas */
         padding: 8px 15px; /* Reducir el tamaño del botón */
         font-size: 1em; /* Reducir el tamaño de la fuente */
+    }
+
+    /* Ajuste de imágenes para dispositivos móviles */
+    #image-cards-container {
+        flex-direction: column; /* Coloca las imágenes en columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .image-card {
+        width: 100%; /* Las imágenes ocuparán el 100% del ancho disponible */
+        height: auto; /* Se ajusta la altura proporcionalmente */
     }
 
     /* Contenedor y otros elementos */
