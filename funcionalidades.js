@@ -99,7 +99,7 @@ function explotar(particula) {
 
 // Función para manejar la cuenta regresiva y habilitar el botón
 function countdown() {
-    const countDownDate = new Date().getTime() + 5000; // Simula que la Navidad es dentro de 5 segundos
+    const countDownDate = new Date("Dec 25, 2024 00:00:00").getTime();
     const x = setInterval(function () {
         const now = new Date().getTime();
         const distance = countDownDate - now;
