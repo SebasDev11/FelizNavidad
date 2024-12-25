@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Navidad, mi amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Feliz Navidad, mi amor ❤️</h1>
+        </header>
+
+        <main>
+            <p>Me hubiera encantado pasar estos días con usted, pero me alegra que esté con sus seres queridos y que haya tenido una bonita Navidad.</p>
+            
+            <div class="countdown-container">
+                <p id="countdown"></p>
+            </div>
+
+            <div class="button-container">
+                <button id="message-button" disabled>Haz clic cuando sea Navidad para ver el mensaje</button>
+            </div>
+
+            <!-- El mensaje está oculto por defecto -->
+            <p id="special-message" style="display:none;">Mi amor, esta Navidad me hace pensar en lo afortunado que soy de tenerla en mi vida. Aunque este año no podamos estar juntos, no puedo evitar soñar con todos los momentos que viviremos en el futuro, claro si usted asi lo desea jaja. Espero que en las próximas Navidades estemos juntos, disfrutando de cada instante y creando recuerdos que nunca olvidaremos. Le amo muchísimo y le deseo una Navidad llena de todo lo que le hace feliz. 🎄✨</p>
+
+            <!-- Contenedor para las tarjetas con imágenes -->
+            <div id="image-cards-container" style="display:none;">
+                <div class="image-card">
+                    <img src="./Imagenes/10.jpg" alt="Imagen 1">
+                </div>
+                <div class="image-card">
+                    <img src="./Imagenes/11.jpeg" alt="Imagen 2">
+                </div>
+                <div class="image-card">
+                    <img src="./Imagenes/12.jpeg" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Contenedor para los fuegos artificiales -->
+            <div id="fireworks-container"></div>
+        </main>
+
+        <footer>
+            <p>&copy; De Jimson</p>
+        </footer>
+    </div>
+
+    <!-- Reproductor de audio -->
+    <audio id="background-music" autoplay loop>
+        <source src="./musica/tú mi 24 de diciembre  Rauw Alejandro - Aquel Nap ZzZz (Letra).mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Botón para detener la música -->
+    <button id="stop-music">Detener música</button>
+
+    <script src="funcionalidades.js"></script>
+</body>
+</html>
